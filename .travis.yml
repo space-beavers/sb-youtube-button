@@ -1,0 +1,28 @@
+language: node_js
+sudo: false
+before_script:
+- npm install -g bower polylint web-component-tester
+- bower install
+- polylint
+env:
+  global:
+  - secure: gZ5vpMlc9fuKSZeMmT6xf4+FIVWxET6f6Lkp6l5Qo9vL2X/KC/bMJF1v2w5xXFLFTdm/hPUDkeQRDUBBJhGcsXhJeWIvAXdPkObV9ZPRwpDnnN1qU5lOqVIy6gFjDm2Wm6UNXcRnyP1TrGpMwbG13EUtD0rF8LZqBm3B833sKS4=
+  - secure: DObDewETPYiIsASeC3UETPbQ6YBniRZdNV2eTM1xULvuFNDxXJD09KKyWOiMduublEIJRXLjBIXmD8cbVsgrbRUYA4bxcXffDeuc6q6HaQGU9HvIbLz6o3/oxi4fX2G9GwrZtijW2p2Rgw2l9koR3ovjcM97CSTWFUMh5rtXag8=
+  - CXX=g++-4.8
+node_js: stable
+addons:
+  firefox: latest
+  apt:
+    sources:
+    - google-chrome
+    - ubuntu-toolchain-r-test
+    packages:
+    - google-chrome-stable
+    - g++-4.8
+  sauce_connect: false
+script:
+- xvfb-run wct
+# - if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then wct -s 'default'; fi
+notifications:
+  slack:
+    secure: P4PZ4wPPUESzdwIGCEHad3ZY2Ic+5j7BC5ZbjAYOPDtG/U92vHJBFBVYoNY6iqifm7vfyzbcN2T+hXr/XPz1QZFkdK/i6X4XGic69D6CKQIOgTp5QZnnyi2nnhtQ5TYK+I8wNl7vN6uzmmLoi+kI6mPYahauOGIDzN5xEvd/LE5FcFe94wHxqkC5iqz6YZKobIb3egyn42owQt08N89hIRIewq5tHfLTxFvj6cIKMcMff20f88dR9pxl28gkcBI6zfHly/g7jIjW9jzwJbK7hUFwBLnhB2Il5WVNAxy7D7pEX/rDGFKpTNQnbGm8WY7xO7LPu0jqJ7WW3lhqtHGAQHtLo5VSUpllS5JvNR6KCJl7bN/QeY/4QNSjqH+cVjchLT7D0ifb17TZbIuBpwcuoteA3D6yR/v4MjQa/zaw8dPnJ0XoKx8K1IwpPEV+fahrlNeifg/X53fmFWoAM9Tb5u/l569e9hgTAjO4SfLqYdgE/aY15Ft4TcnUqgtZMQK4+rM7qA30hmpSZB3TL9Rk8okMPamKqDITFLMtGoEwNTugSKicwjpVfE2XEUrnkqWZxKgx9Q4/sg0DVdWsyEKHPSyGZLJlYPJDx7VGIhVkcXTcyE5EzfyUF1FHSBLbbBsCA0RrBQTeQTIP8apSAWrnmSWh+tCv/shDSjDn2h6SSIM=
