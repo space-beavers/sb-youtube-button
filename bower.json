@@ -1,5 +1,5 @@
 {
-  "name": "sb-meme-generator",
+  "name": "sb-youtube-button",
   "version": "1.0.0",
   "authors": [
     "Mike Buckley <mikebuckley.canada@gmail.com>",
@@ -13,9 +13,9 @@
     "meme-generator",
     "polymer"
   ],
-  "main": "sb-meme-generator.html",
+  "main": "sb-youtube-button.html",
   "license": "http://polymer.github.io/LICENSE.txt",
-  "homepage": "https://github.com/space-beavers/sb-meme-generator",
+  "homepage": "https://github.com/space-beavers/sb-youtube-button",
   "ignore": [
     "/.*",
     "/test/"

@@ -1,4 +1,4 @@
-# sb-meme-generator [![Build Status](https://travis-ci.org/space-beavers/sb-meme-generator.svg?branch=master)](https://travis-ci.org/space-beavers/sb-meme-generator)
+# sb-youtube-button [![Build Status](https://travis-ci.org/space-beavers/sb-youtube-button.svg?branch=master)](https://travis-ci.org/space-beavers/sb-youtube-button)
 
 Meme generator polymer element
 
@@ -15,7 +15,7 @@ install that via:
 Then, go ahead and download the element's dependencies:
 
     bower install
-	  
+
 
 ## Playing With Your Element
 
@@ -24,19 +24,19 @@ If you wish to work on your element in isolation, we recommend that you use
 bower dependencies in line. You can install it via:
 
     npm install -g polyserve
- 
+
 And you can run it via:
 
     polyserve
 
 Once running, you can preview your element at
-`http://localhost:8080/components/sb-meme-generator/`, where `sb-meme-generator` is the name of the directory containing it.
+`http://localhost:8080/components/sb-youtube-button/`, where `sb-youtube-button` is the name of the directory containing it.
 
 
 ## Testing Your Element
 
 Simply navigate to the `/test` directory of your element to run its tests. If
-you are using Polyserve: `http://localhost:8080/components/sb-meme-generator/test/`
+you are using Polyserve: `http://localhost:8080/components/sb-youtube-button/test/`
 
 ### web-component-tester
 

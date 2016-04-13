@@ -1,7 +1,7 @@
 {
-  "name": "sb-meme-generator",
+  "name": "sb-youtube-button",
   "version": "1.0.0",
-  "description": "Meme generator polymer element",
+  "description": "Youtube button polymer element",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/space-beavers/sb-meme-generator.git"
+    "url": "git+https://github.com/space-beavers/sb-youtube-button.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/space-beavers/sb-meme-generator/issues"
+    "url": "https://github.com/space-beavers/sb-youtube-button/issues"
   },
-  "homepage": "https://github.com/space-beavers/sb-meme-generator#readme"
+  "homepage": "https://github.com/space-beavers/sb-youtube-button#readme"
 }

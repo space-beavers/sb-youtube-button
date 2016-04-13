@@ -17,24 +17,24 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <script src="../../web-component-tester/browser.js"></script>
 
     <!-- Step 1: import the element to test -->
-    <link rel="import" href="../sb-meme-generator.html">
+    <link rel="import" href="../sb-youtube-button.html">
   </head>
   <body>
 
     <!-- You can use the document as a place to set up your fixtures. -->
-    <test-fixture id="sb-meme-generator-fixture">
+    <test-fixture id="sb-youtube-button-fixture">
       <template>
-        <sb-meme-generator header="test header"></sb-meme-generator>
+        <sb-youtube-button header="test header"></sb-youtube-button>
       </template>
     </test-fixture>
 
     <script>
-      suite('<sb-meme-generator>', function() {
+      suite('<sb-youtube-button>', function() {
 
         var myEl;
 
         setup(function() {
-          myEl = fixture('sb-meme-generator-fixture');
+          myEl = fixture('sb-youtube-button-fixture');
         });
 
         test('defines the "header" property', function() {
