@@ -10,7 +10,7 @@
   "description": "Meme generator polymer element",
   "keywords": [
     "space beavers",
-    "meme-generator",
+    "youtube-button",
     "polymer"
   ],
   "main": "sb-youtube-button.html",
